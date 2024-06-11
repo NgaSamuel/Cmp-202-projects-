@@ -1,22 +1,24 @@
-cmp 202.docx
+Array Rotation
+Description
 
+This Java exercise rotates the elements in an array.
 
-Algorithm Explanation
-Step1:
+Group Members/Contributors
+Hanior Nabem Nathaniel - BHU/22/04/09/0074
+Ezekiel Oyidih - BHU/22/04/05/0026
+Ngakilahyel Samuel - BHU/22/04/10/0019
+Caleb Joshua Fuojima - BHU/22/04/05/0018
+Precious Oguntuase Toluwalope - BHU/22/04/05/0070
+Method
 
-Declare the array to be rotated.
+A left rotation operation on an array shifts each of the array elements 1 unit to the left. More details in question.txt
 
-Step2: 
+Algorithm
 
- Create a new array rotatedArray to store the result after rotation.
-
-Step 3:
-Loop through each element of the original array a ensure that the index wrap doesn't exceeds the array length.
-
-Step4:
-Return Rotated Array:
-
-
-
-Step5:
-Print out the rotated array 
+Define the function rotLeft and pass int 'a' and int 'd' as parameters with an integer array as a return type.
+Initialize a variable 'n_elements' to store the length of array 'a'.
+Create a new integer array 'rot' with the same length as array 'a'.
+Loop through the original array 'a';
+Calculate the index for the rotated array ('rot') using the formula '(i + (n_elements - d)) % n_elements'.
+Assign the value of 'a[i]' to the calculated index in the rotated array.
+End the loop.
